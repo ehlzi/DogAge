@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    /* Display and positioning */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Box model */
+    height: 100vh;
+    margin: 0;
+
+    /* Typography */
+    font-family: Arial, sans-serif;
+
+    /* Colors and backgrounds */
+    background-color: #87CEEB;
+}
+
+.container {
+    /* Display and positioning */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    /* Box model */
+    padding: 2rem; /* Using rem for consistent scaling */
+    width: 60vh; /* Using vh for responsive layout */
+    box-sizing: border-box;
+
+    /* Colors and backgrounds */
+    background-color: white;
+
+    /* Borders and box-shadow */
+    border-radius: 5px;
+    box-shadow: 0 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    /* Typography */
+    text-align: center;
+
+    /* Colors and backgrounds */
+    color: #333;
+}
+
+#age-input-container {
+    /* Display and positioning */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-field,
+input[type="number"] {
+    /* Box model */
+    margin: 1rem; /* Using rem for consistent scaling */
+    width: 40vh; /* Using vh for responsive layout */
+    padding: 1rem; /* Using rem for consistent scaling */
+    box-sizing: border-box;
+
+    /* Borders and box-shadow */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#result {
+    /* Display and positioning */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /* Box model */
+    width: 40vh; /* Using vh for responsive layout */
+    margin: 2rem; /* Using rem for consistent scaling */
+
+    /* Typography */
+    text-align: center;
+
+    /* Colors and backgrounds */
+    background-color: #899499;
+    color: white;
+
+    /* Borders and box-shadow */
+    border-radius: 5px;
+}
+
+#button-container {
+    /* Box model */
+    width: 40vh; /* Using vh for responsive layout */
+    margin: 2rem; /* Using rem for consistent scaling */
+}
+
+.button {
+    /* Display and positioning */
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    /* Box model */
+    width: 100%; /* Using % for fluid layout */
+    padding: 1rem 2rem; /* Using rem for consistent scaling */
+    margin: 0.4rem 0.2rem; /* Using rem for consistent scaling */
+
+    /* Typography */
+    font-size: 1rem; /* Using rem for consistent scaling */
+
+    /* Colors and backgrounds */
+    background-color: #4CAF50;
+    color: white;
+
+    /* Borders and box-shadow */
+    border: none;
+    border-radius: 5px;
+
+    /* Transitions and animations */
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    /* Colors and backgrounds */
+    background-color: #45a049;
+}
+
+.button:focus {
+    /* Borders and box-shadow */
+    outline: 2px solid #FF6347;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        /* Box model */
+        min-width: 60vh; /* Using vh for responsive layout */
+    }
+
+    input[type="number"],
+    #result,
+    #button-container {
+        /* Box model */
+        width: 40vh; /* Using vh for responsive layout */
+    }
+
+    .button {
+        /* Box model */
+        width: 100%; /* Using % for fluid layout */
+    }
+}
